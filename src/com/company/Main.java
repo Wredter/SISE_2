@@ -13,9 +13,10 @@ public class Main {
 //        for(int i=0;i<args.length;i++){
 //            System.out.println(args[i]);
 //        }
+        String Path = "D:\\UnityProjects\\SISE_2\\Data\\";
         switch (args[0]){
             case "bfs":{
-                PuzzleLoader pl = new PuzzleLoader("D:\\UnityProjects\\SISE_2\\Data\\"+args[2]);
+                PuzzleLoader pl = new PuzzleLoader(Path+args[2]);
                 //ArrayList<Character> listMoves = new ArrayList<>();
                 //Solver solver = new Solver(p);
                 try {
@@ -36,7 +37,7 @@ public class Main {
                 break;
             }
             case "dfs":{
-                PuzzleLoader pl = new PuzzleLoader("D:\\UnityProjects\\SISE_2\\Data\\"+args[2]);
+                PuzzleLoader pl = new PuzzleLoader(Path+args[2]);
                 //ArrayList<Character> listMoves = new ArrayList<>();
                 //Solver solver = new Solver(p);
                 try {
@@ -58,7 +59,7 @@ public class Main {
             case "astr":{
                 switch (args[1]){
                     case"manh":{
-                        PuzzleLoader pl = new PuzzleLoader("D:\\UnityProjects\\SISE_2\\Data\\"+args[2]);
+                        PuzzleLoader pl = new PuzzleLoader(Path+args[2]);
                         //ArrayList<Character> listMoves = new ArrayList<>();
                         //Solver solver = new Solver(p);
                         try {
@@ -78,7 +79,7 @@ public class Main {
                         break;
                     }
                     case"hamm":{
-                        PuzzleLoader pl = new PuzzleLoader("D:\\UnityProjects\\SISE_2\\Data\\"+args[2]);
+                        PuzzleLoader pl = new PuzzleLoader(Path+args[2]);
                         //ArrayList<Character> listMoves = new ArrayList<>();
                         //Solver solver = new Solver(p);
                         try {
