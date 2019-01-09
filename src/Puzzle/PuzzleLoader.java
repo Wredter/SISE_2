@@ -33,7 +33,7 @@ public class PuzzleLoader {
         return loadedPuzzel;
     }
     public void generateSolutionFile(String path,Puzzle p){
-        File f = new File("D:\\UnityProjects\\SISE_2\\Data\\"+path);
+        File f = new File("C:\\Users\\Jerry\\Documents\\GitHub\\SISE_2\\Data\\"+path);
         if(f.exists() && !f.isDirectory()) {
             f.delete();
         }
@@ -47,9 +47,9 @@ public class PuzzleLoader {
         for(Character c:listMoves){
             solution = solution+c;
         }
-        File file = new File("D:\\UnityProjects\\SISE_2)\\Data\\"+path);
+        File file = new File("C:\\Users\\Jerry\\Documents\\GitHub\\SISE_2\\Data\\"+path);
         try {
-            PrintWriter zapis = new PrintWriter("D:\\UnityProjects\\SISE_2\\Data\\"+path);
+            PrintWriter zapis = new PrintWriter("C:\\Users\\Jerry\\Documents\\GitHub\\SISE_2\\Data\\"+path);
             zapis.println(listMoves.size());
             zapis.println(solution);
             zapis.close();
@@ -59,13 +59,13 @@ public class PuzzleLoader {
         }
     }
     public void generateStatsFile(String path,int odw, int prze,int depth,float time){
-        File f = new File("D:\\UnityProjects\\SISE_2\\Data\\"+path);
+        File f = new File("C:\\Users\\Jerry\\Documents\\GitHub\\SISE_2\\Data\\"+path);
         if(f.exists() && !f.isDirectory()) {
             f.delete();
         }
-        File file = new File("D:\\UnityProjects\\SISE_2\\Data\\"+path);
+        File file = new File("C:\\Users\\Jerry\\Documents\\GitHub\\SISE_2\\Data\\"+path);
         try {
-            PrintWriter zapis = new PrintWriter("D:\\UnityProjects\\SISE_2\\Data\\"+path);
+            PrintWriter zapis = new PrintWriter("C:\\Users\\Jerry\\Documents\\GitHub\\SISE_2\\Data\\"+path);
             zapis.println(listMoves.size());
             zapis.println(odw);
             zapis.println(prze);

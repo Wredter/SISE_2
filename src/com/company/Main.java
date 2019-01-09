@@ -13,7 +13,7 @@ public class Main {
 //        for(int i=0;i<args.length;i++){
 //            System.out.println(args[i]);
 //        }
-        String Path = "D:\\UnityProjects\\SISE_2\\Data\\";
+        String Path = "C:\\Users\\Jerry\\Documents\\GitHub\\SISE_2\\Data\\";
         switch (args[0]){
             case "bfs":{
                 PuzzleLoader pl = new PuzzleLoader(Path+args[2]);
